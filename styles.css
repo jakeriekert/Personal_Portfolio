@@ -7,29 +7,63 @@
     background-color: wheat;
 }
 /* Navbar Flexbox */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap");
 
-:root {
-    --nav-color: #675d50;
-    --nav-text: #fff;
-    --primary-color: #f3deba;
-    --secondary-color: #abc4aa;
-    --hover-color: #a9907e;
-}
-body {
-    background-color: var(--primary-color);
-}
-.container {
-    background-color: var(--nav-color);
-    font-size: 1.2rem;
-    font-family: "Merriweather Sans", sans-serif;
-    height: 70px; 
-}
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-  }
+    :root {
+        --nav-color: #675d50;
+        --nav-text: #fff;
+        --primary-color: #f3deba;
+        --secondary-color: #abc4aa;
+        --hover-color: #a9907e;
+    }
+    body {
+        background-color: var(--primary-color);
+    }
+    .container {
+        background-color: var(--nav-color);
+        font-size: 1.2rem;
+        font-family: "Merriweather Sans", sans-serif;
+        height: 70px; 
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+    }
+    .navbar ul {
+        display:flex;
+    }
+    .navbar ul li {
+        list-style-type: none;
+      }
+    .container .navbar ul li {
+        padding: 10px;
+        margin: 0 10px;
+    }
+    .navbar a {
+        color: var(--nav-text);
+        font-weight: bold;
+    }
+    .navbar a:hover {
+        color: var(--secondary-color);
+    }
+    .container .navbar {
+        justify-content: space-between;
+      }
+    
+    @media media-type and (media-feature-rule) {
+        /* CSS rule */
+    }
+       
+    @media screen and (min-width: 390px) and (max-width: 767px) {
+        .container {
+          height: 100%;
+        }
+      
+        .container .navbar {
+          flex-direction: column;
+        }
+      }
