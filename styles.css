@@ -67,3 +67,29 @@
           flex-direction: column;
         }
       }
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#about-list { 
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-color);
+    list-style-type: disc;
+    justify-content: flex-end;
+    align-self: auto;
+   
+    /* float: right;
+    vertical-align: bottom; */
+    padding: 25px;
+}
+.profile-img {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 25%;
+    float: left;
+    padding: 25px;
+}
