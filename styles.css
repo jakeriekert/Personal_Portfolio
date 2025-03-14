@@ -24,7 +24,7 @@
     .container {
         background-color: var(--nav-color);
         font-size: 1.2rem;
-        font-family: "Merriweather Sans", sans-serif;
+        font-family: sans-serif;
         height: 70px; 
     }
     .navbar {
@@ -69,10 +69,19 @@
           flex-direction: column;
         }
       }
+/* Adding Boxes around sections */
+.section-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the box */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 /* About Flexbox */
 #about {
     padding: 20px;
-}
+    }
 .about-content {
     display: flex;
     align-items: center;
@@ -81,11 +90,15 @@
     background: var(--secondary-color);
     list-style-type: disc;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 }
 #about-list ul {
     background: var(--secondary-color);
@@ -112,11 +125,14 @@
     color: #fff;
     list-style-type: disc;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 #skills-list ul {
     background: var(--third-color);
@@ -195,6 +211,9 @@
 #contact {
     padding: 20px;
     background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 }
 .contact-form {
     display: flex;
@@ -231,3 +250,12 @@ a:hover {
     text-decoration: underline;
     color: var(--secondary-color);
     }
+/* Footer stuff */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--nav-color);
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+    
