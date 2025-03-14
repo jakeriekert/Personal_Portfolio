@@ -55,20 +55,38 @@
     .container .navbar {
         justify-content: space-between;
       }
-    
-    @media media-type and (media-feature-rule) {
-        /* CSS rule */
+/* Make navbar responsive */    
+@media (max-width: 768px) {
+    .container {
+        height: auto;
     }
-       
-    @media screen and (min-width: 390px) and (max-width: 767px) {
-        .container {
-          height: 100%;
-        }
-      
-        .container .navbar {
-          flex-direction: column;
-        }
-      }
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .container .navbar {
+        flex-direction: column;  /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+    
+    .container .navbar ul {
+        flex-direction: column; /* Stack the list items vertically */
+        width: 100%; /* Full width of the container */
+        padding: 0; /* Reset padding */
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    .container .navbar ul li {
+        padding: 5px 0; /* Adjust padding for better spacing */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Adjust font size if needed */
+        padding: 8px; /* Adjust padding for better click area */
+    }
+}
 /* Adding Boxes around sections */
 .section-content {
     max-width: 1200px;
